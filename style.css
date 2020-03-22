@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap');
+* {
+    box-sizing: border-box
+}
+
+body {
+    line-height: 1.6;
+    display: flex;
+    padding: 1em;
+    background-color: black;
+}
+
+.container {
+    background-image: linear-gradient( 115deg, rgba(66, 144, 247, 0.8), rgba(70, 41, 55, 0.7)), url(https://res.cloudinary.com/loveth/image/upload/v1579471381/startup-593327_640_l6h0fu.webp);
+    max-width: 1170px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+.wrapper h1 {
+    text-align: center;
+    font-weight: lighter;
+    margin: 0;
+    color: #fff;
+}
+
+.fa-fire {
+    color: rgb(243, 209, 13);
+    margin: 2px;
+}
+
+span {
+    font-size: 12px;
+    font-style: italic;
+    color: white;
+}
+
+.wrapper {
+    box-shadow: 0 0 20px 0 rgba(2, 5, 61, 0.8);
+}
+
+.wrapper>* {
+    padding: 1em;
+}
+
+.column,
+.secondary {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.column p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.column form {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+.column .social-container a {
+    border: 1px solid rgb(112, 180, 207);
+    color: white;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px 5px;
+    height: 28px;
+    width: 28px;
+}
+
+.column form p {
+    margin: 0;
+}
+
+.column form input {
+    width: 100%;
+    padding: 1em;
+}
+
+a {
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+
+ ::placeholder {
+    color: #fff;
+}
+
+button {
+    border-radius: 20px;
+    border: 0;
+    background-color: rgb(84, 151, 238);
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 20px;
+    padding: 12px 20px;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgb(238, 128, 192);
+    transition: background-color 2s ease-out;
+}
+
+button:focus {
+    outline: none;
+}
+
+@media(min-width:700px) {
+    .column {
+        display: flex;
+        flex-direction: row;
+    }
+    .wrapper>* {
+        padding: 10em;
+    }
+    .wrapper {
+        box-shadow: none;
+    }
+    form {
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+    }
+    .column .title {
+        position: absolute;
+        top: 20px;
+        left: 112px;
+        text-align: center;
+        padding-left: 5em;
+        padding-top: 4em;
+    }
+    input {
+        margin: 20px 0;
+        padding: 12px 15px 20px;
+        font-size: 20px;
+    }
+}
